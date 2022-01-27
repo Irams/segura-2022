@@ -1,0 +1,629 @@
+/*
+Theme Name:    Photographer
+Theme URI:     http://ThemeWagon.com/photographer
+Author:        ThemeWagon
+Author URI:    http://ThemeWagon.com/
+Description:   Photographer is a single page html template based on bootstrap 3
+Version:       1.0.0
+License:       GNU General Public License v2 or later
+License URI:   http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+
+
+/* ==========================================================================
+    General
+========================================================================== */
+h1,h2,h3,h4,h5,h6,.navbar {
+    /*font-family:'Oswald';*/
+    font-family: 'News Cycle', sans-serif;
+    /*font-weight:100;*/
+    font-weight: 400;
+}
+
+body {
+    padding-top: 70px;
+}
+
+a {
+    /*transition*/
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    -o-transition:all 0.3s;
+    transition:all 0.3s;
+}
+
+a {
+    color:#0a4891;
+}
+
+a:hover {
+    color:#ec343c;
+    text-decoration: none;
+}
+.btn-o {
+    border:1px solid #34c8b2;
+    /*border-radius*/
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    border-radius:0px;
+    color:#34c8b2;
+}
+
+.btn-o:hover {
+    color:white;
+    background:#34c8b2;
+}
+
+img {
+    max-width:100%;
+    max-height: 100%;
+}
+
+.hexagon {
+    width:100px;
+    height:55px;
+    background:#104389;
+    position:relative;
+    /*transition*/
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    -o-transition:all 0.3s;
+    transition:all 0.3s;
+}
+
+.hexagon:before {
+    content:"";
+    position:absolute;
+    top:-25px;
+    left:0;
+    width:0;
+    height:0;
+    border-left:50px solid transparent;
+    border-right:50px solid transparent;
+    border-bottom:25px solid #104389;
+    /*transition*/
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    -o-transition:all 0.3s;
+    transition:all 0.3s;
+}
+
+.hexagon:after {
+    content:"";
+    position:absolute;
+    bottom:-25px;
+    left:0;
+    width:0;
+    height:0;
+    border-left:50px solid transparent;
+    border-right:50px solid transparent;
+    border-top:25px solid #104389;
+    /*transition*/
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    -o-transition:all 0.3s;
+    transition:all 0.3s;
+}
+
+.hexagon:hover {
+    background:#ec7034;
+}
+
+.hexagon:hover:before {
+    border-bottom-color:#ec7034;
+}
+
+.hexagon:hover:after {
+    border-top-color: #ec7034;
+}
+
+
+/* ==========================================================================
+Navigation
+========================================================================== */
+.navbar-dark {
+    background:#222222;
+    z-index: 99999;
+}
+
+.navbar-dark a {
+    /*color:rgb(153,160,162);*/
+    color: rgb(205, 209, 210);
+}
+
+.navbar-brand {
+    height:70px;
+    padding:25px 15px;
+}
+
+.navbar-nav>li>a {
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+.navbar-brand strong {
+    color:white;
+    margin-right:2px;
+}
+
+.navbar-brand:hover {
+    color:#ec343c;
+    text-decoration:none;
+}
+
+.nav>li>a:hover,.nav>li>a:focus {
+    background-color:#ec343c;
+    color: white;
+}
+
+
+/* ==========================================================================
+Caurosel
+========================================================================== */
+.carousel-control {
+    z-index:9999;
+}
+
+.carousel-control>img {
+    position:absolute;
+    top:42%;
+    width:30%;
+}
+
+.left.carousel-control>img {
+    left:30%;
+}
+
+.right.carousel-control>img {
+    right:30%;
+}
+
+.camera-icon {
+    position:absolute;
+    width:100%;
+    left:0;
+    top:0;
+    text-align:center;
+    z-index:99;
+    padding-top: 9%;
+}
+
+.camera-icon .circle {
+    width:200px;
+    height:200px;
+    line-height:200px;
+    display:inline-block;
+    /*border-radius*/
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+    border:1px solid white;
+    position:relative;
+    color:white;
+    opacity:.85;
+}
+
+.camera-icon .circle i {
+    color:white;
+    position:absolute;
+    z-index:1;
+    left:28px;
+    top:8px;
+    font-size:38px;
+}
+
+.camera-icon .circle .hexagon {
+    display:inline-block;
+    margin-top:75px;
+    position: relative;
+}
+
+
+/* ==========================================================================
+content-block
+========================================================================== */
+.content-block {
+    padding:50px 0;
+    width:100%;
+}
+
+.content-block-cyan {
+    background:#0d458f;
+    color:#ECF0F1;
+}
+
+.content-block-cyan h1 {
+    font-weight:100;
+    text-transform:uppercase;
+    margin-bottom: 30px;
+}
+
+
+/* ==========================================================================
+Recent works
+========================================================================== */
+.recent-projects-title {
+    background: rgba(236, 240, 241, 1);
+    color: #333;
+    text-transform: uppercase;
+    padding: 50px 0px;
+    text-align: center;
+    font-size: 62px;
+    font-family: 'News Cycle', sans-serif;
+    word-spacing: 17px;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.owl-carousel .owl-item img {
+    height:auto;
+    width:100%;
+    display:block;
+    position:relative;
+}
+
+.owl-carousel .item {
+    margin:0px;
+}
+
+.owl-item>div {
+    position:relative;
+}
+
+.owl-item>div a {
+    position:absolute;
+    bottom:0px;
+    padding:8px;
+    background:rgba(0,0,0,0.75);
+    right:0;
+    color:white;
+    text-transform:uppercase;
+    z-index: 2;
+}
+
+.owl-carousel .owl-item div:before {
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    position:absolute;
+    content:'';
+    background:rgba(5,27,26,1);
+    z-index:1;
+    opacity:0.5;
+    /*transition*/
+    -webkit-transition:opacity 0.4s;
+    -moz-transition:opacity 0.4s;
+    -o-transition:opacity 0.4s;
+    transition:opacity 0.4s;
+}
+
+.owl-carousel .owl-item:hover div:before {
+    opacity: 0;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    background: #34C8B2;
+}
+/* ==========================================================================
+testimoniales
+========================================================================== */
+section .contenedor{
+  width: 90%;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  margin-top: 10px;
+}
+
+div.testimonial{
+  padding: 10px;
+  display: block;
+}
+@media only screen and (min-width:768px){
+  #testimoniales{
+
+  }
+  div.testimonial{
+    float: left;
+    width: 33.3%;
+  }
+}
+blockquote{
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  position: relative;
+  margin: 0 0 50px 0;
+  padding-bottom: 2 0px;
+  height: 16em;
+}
+blockquote p{
+  text-align: justify;
+  font-size: .8em!important;
+  text-transform: none;
+  padding: 0 20px 0 65px;
+}
+blockquote p::before{
+  content: '\201c';
+  position: absolute;
+  left: 45px;
+  top: -8px;
+  font-size: 10rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  color: #e76c31;
+}
+footer.info-testimonial{
+  padding: 0;
+
+}
+footer.info-testimonial img{
+  float: left;
+  width: 20%;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+footer.info-testimonial cite{
+  text-align: left;
+  color: #e76c31;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-top: 20px;
+  width: 66.6%;
+  float: right;
+  font-weight: bold;
+  font-style: normal;
+}
+footer.info-testimonial cite span {
+  color: #000000;
+  display: block;
+  text-transform: none;
+  margin-top: 5px;
+}
+
+/* ==========================================================================
+blog
+========================================================================== */
+.block-heading h1 {
+    margin-top:15px;
+}
+
+.content-block-gray {
+    background:#ECF0F1;
+}
+
+.block-heading {
+    margin-bottom: 20px;
+}
+
+
+/* ==========================================================================
+Social
+========================================================================== */
+#social {
+    padding:110px 0;
+}
+
+#social .hexagon {
+    display:inline-block;
+}
+
+#social .hexagon i {
+    font-size:36px;
+    color:white;
+    line-height:55px;
+    position:relative;
+    z-index: 1;
+}
+/* ==========================================================================
+Imagen Parallax
+========================================================================== */
+#parallax{
+    background-image: url("../img/info-nutrimental.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* ==========================================================================
+footer
+========================================================================== */
+footer.content-block {
+    padding: 60px 0 38px;
+    width: 100%;
+
+}
+
+.content-block-dark {
+    background:#222222;
+}
+
+footer {
+    text-align:center;
+    color: rgb(153,160,162);
+}
+
+
+/* ==========================================================================
+Responsive styles
+========================================================================== */
+
+@media (max-width:768px) {
+    .navbar-nav>li>a {
+        padding-top:10px;
+        padding-bottom:10px;
+        text-align:center;
+    }
+    .navbar-toggle i {
+        color:rgb(153,160,162);
+    }
+    .navbar-toggle {
+        margin-top:14px;
+    }
+    .recent-projects-title {
+        font-size:32px;
+    }
+    .blog-post {
+        margin-bottom:40px;
+    }
+    #social .hexagon {
+        margin-bottom:60px;
+    }
+    #social {
+        padding-bottom: 70px;
+    }
+    .testimoniales{
+        margin-top: 12rem !important;
+    }
+    blockquote{
+        height: fit-content;
+    }
+}
+/* ==========================================================================
+Mios
+========================================================================== */
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+}
+@media only screen and (min-widt: 480px){
+    .contenedor{
+        width: 95%;
+    }
+}
+@media only screen and (min-widt: 768px){
+    .contenedor{
+        width: 90%;
+    }
+}
+@media only screen and (min-widt: 992px){
+    .contenedor{
+        width: 90%;
+        max-width: 1100px;
+    }
+}
+/*beneficios*/
+ul.lista-beneficios li{
+    /*padding: 10px;*/
+    float: left;
+    list-style: none;
+}
+@media only screen and (min-width: 480px){
+    ul.lista-beneficios li{
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 768px){
+    ul.lista-beneficios li{
+        width: 33.3%;
+    }
+}
+div.beneficio{
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+
+}
+div.beneficio img{
+    max-width: 100%;
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .6s ease-in-out;
+}
+div.beneficio:hover img{
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.1);
+
+}
+div.beneficio p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px 10px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    color: #fe4918;
+    text-transform: uppercase;
+    -webkit-transition: all .6s ease-in-out;
+}
+div.beneficio:hover p{
+    bottom: -80px;
+    opacity: 0;
+}
+.seccion{
+    padding: 30px 0;
+}
+
+div.beneficio{
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+
+}
+div.beneficio img{
+    max-width: 100%;
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .6s ease-in-out;
+}
+div.beneficio:hover img{
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.1);
+
+}
+div.beneficio p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px 10px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    color: #fe4918;
+    text-transform: uppercase;
+    -webkit-transition: all .6s ease-in-out;
+}
+div.beneficio:hover p{
+    bottom: -80px;
+    opacity: 0;
+}
+
+/*Mapa*/
+div.mapa {
+    height: 420px;
+}
+
+/*Cuenta regresiva*/
+
+div.cuenta-regresiva ul li{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+
+    text-align: center;
+    list-style: none;
+    color: #1f57c1;
+}
+@media only screen and (min-width: 768px){
+    div.cuenta-regresiva ul li{
+        float: left;
+        width: 25%;
+        font-size: 5rem;
+    }
+}
+p.numero{
+    font-size: 4em;
+    display: block;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
