@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SliderService } from '../../services/slider.service';
 
 @Component({
   selector: 'app-slider',
@@ -8,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SliderComponent implements OnInit {
 
-  constructor() { }
+  constructor( public sliderService: SliderService ) {
+    
+    
+   }
+
+   
 
   ngOnInit(): void {
   }

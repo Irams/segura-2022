@@ -9,6 +9,10 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { SliderComponent } from './shared/slider/slider.component';
 import { HomeComponent } from './pages/home/home.component';
 import { EventosComponent } from './pages/eventos/eventos.component';
+import { HttpClientModule } from '@angular/common/http';
+import { BeneficiosComponent } from './pages/beneficios/beneficios.component';
+import { DistribuidoresComponent } from './pages/distribuidores/distribuidores.component';
+import { TestimonialesComponent } from './pages/testimoniales/testimoniales.component';
 
 @NgModule({
   declarations: [
@@ -17,11 +21,15 @@ import { EventosComponent } from './pages/eventos/eventos.component';
     FooterComponent,
     SliderComponent,
     HomeComponent,
-    EventosComponent
+    EventosComponent,
+    BeneficiosComponent,
+    DistribuidoresComponent,
+    TestimonialesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
